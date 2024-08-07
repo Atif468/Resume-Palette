@@ -1,15 +1,18 @@
-// import { useState } from 'react';
-// import Test from "./component/test";
-// import Show from "./component/show";
+import Sidebar from "./resume/sidebar";
 import Resume from "./resume/resume";
 import ResumeForm from "./resume/resumeform";
+
 function App() {
   return (
     <>
-      <section className="w-[50%] h-[100%] fixed bg-red-600 left-0 z-10 top-0 overflow-hidden">
+    <nav className="h-10 relative bg-slate-800 text-white text-center text-base">
+      <h1>Hey this is my Resume making app...</h1>
+    </nav>
+      <section className="w-[60%] h-[100%] fixed bg-red-600 left-0 z-10 overflow-auto touch-auto flex flex-row justify-between">
+        <Sidebar />
         <ResumeForm />
       </section>
-      <section className="w-[50%] h-[100%] fixed scroll-auto bg-black right-0 z-10 top-0 overflow-hidden">
+      <section className="w-[50%] h-[100%] p-10 fixed bg-black right-0 z-10 overflow-auto touch-auto">
         <Resume />
       </section>
     </>

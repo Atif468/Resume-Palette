@@ -45,7 +45,7 @@ const ResumeForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-8">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto  relative top-14 h-full bg-white rounded-lg shadow-lg p-8">
       {/* Other input fields */}
       <label htmlFor="projects" className="block mb-2">
         Projects:
