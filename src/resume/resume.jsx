@@ -18,7 +18,7 @@ function Resume() {
         }}
         content={() => componentref.current}
       />
-      <div className="bg-gray-100 min-h-screen">
+      <div className="bg-gray-100 ">
         <div
           className="max-w-4xl mx-auto border border-red-600 bg-white rounded-lg shadow-lg p-8"
           ref={componentref}
@@ -104,7 +104,7 @@ function Resume() {
               </p>
             </div>
           </section>
-          <section className="mb">
+          <section className="">
             <h2 className="text-xl font-bold mb-1">Honors & Awards</h2>
             <hr />
             <ul className="list-disc ml-6">
@@ -112,7 +112,7 @@ function Resume() {
               <li>First Place in Hackathon Competition - ABC Tech Expo</li>
             </ul>
           </section>
-          <section className="mb-6">
+          <section >
             <h2 className="text-xl font-bold mb-2">Certifications</h2>
             <hr />
             <ul className="list-disc ml-6">
@@ -122,7 +122,7 @@ function Resume() {
               </li>
             </ul>
           </section>
-          <section className="mb-6">
+          <section>
             <h2 className="text-xl font-bold mb-2">Skills</h2>
             <hr />
             <ul className="list-disc ml-6">

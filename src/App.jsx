@@ -5,8 +5,9 @@ import LabelBottomNavigation from "./resume/side";
 function App() {
   return (
     <>
-    {/* <nav className="h-10 relative bg-slate-800 text-white text-center text-base">
-    </nav> */}
+    <nav className="h-10 relative text-black text-2xl text-center ">
+          Under marammat..
+    </nav>
       <section className="w-[50%] h-[100%] fixed left-0 overflow-auto touch-auto ">
         {/* <Sidebar /> */}
         {/* <ResumeForm /> */}

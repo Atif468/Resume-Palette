@@ -57,7 +57,6 @@ export default function LabelBottomNavigation() {
         value="certificate"
         icon={<BadgeIcon />}
       />
-      <BottomNavigationAction label="Folder" value="folder" icon={<FolderIcon />} />
     </BottomNavigation>
   );
 }
