@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import ReactToPrint from "react-to-print";
-import componentref from "./resume.jsx";
+// import ReactToPrint from "react-to-print";
+// import componentref from "./resume.jsx";
 
 const ResumeForm = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +45,7 @@ const ResumeForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto  relative top-14 h-full bg-white rounded-lg shadow-lg p-8">
+    <form onSubmit={handleSubmit} className="max-w-md w-[70%] mx-auto  relative top-14 bg-white rounded-lg shadow-lg p-8">
       {/* Other input fields */}
       <label htmlFor="projects" className="block mb-2">
         Projects:
@@ -110,19 +110,7 @@ const ResumeForm = () => {
         </button>
       </label>
 
-      <ReactToPrint
-        trigger={() => {
-          return (
-            <button
-              onClick={console.log("not work")}
-              className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
-            >
-              Download
-            </button>
-          );
-        }}
-        content={() => componentref.current}
-      />
+      
     </form>
   );
 };

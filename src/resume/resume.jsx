@@ -1,13 +1,26 @@
 import { useRef } from "react";
+import ReactToPrint from "react-to-print";
 
 function Resume() {
   const componentref = useRef();
   return (
     <>
-      
-      <div className="bg-gray-100 min-h-screen py-8">
+      <ReactToPrint
+        trigger={() => {
+          return (
+            <button
+              onClick={console.log("not work")}
+              className="bg-blue-500 text-white px-4 py-2 rounded-md mt-4"
+            >
+              Download
+            </button>
+          );
+        }}
+        content={() => componentref.current}
+      />
+      <div className="bg-gray-100 min-h-screen">
         <div
-          className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-8"
+          className="max-w-4xl mx-auto border border-red-600 bg-white rounded-lg shadow-lg p-8"
           ref={componentref}
         >
           <header className="flex justify-between items-center mb-8">
